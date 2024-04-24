@@ -5,7 +5,7 @@ Please take the time to read through all of the sections below; we want you to d
 Feel free to reach out to your recruiting contact with any questions or concerns.
 
 ## Goal
-Modify the provided Nuxt 3 app to match [this mock](https://www.figma.com/file/Nqtrx7PvY68U8FeNphzHDM/Untitled?type=design&node-id=0%3A1&mode=design&t=QrPxbJQ6qtH5BfBR-1) as closely as possible while utilizing best-practices to improve the codebase and implement the functional requirements outlined below.
+Modify the provided Nuxt 3 app to match [this mock](https://www.figma.com/file/Nqtrx7PvY68U8FeNphzHDM/Gank-Technical-Test) as closely as possible while utilizing best-practices to improve the codebase and implement the functional requirements outlined below.
 
 - The provided exercise files are a starting point and they have room for improvement; feel free to modify
 - Don't treat the mock as gospel -- if you see things that don't make sense, ask questions or implement what you think is right
@@ -13,7 +13,7 @@ Modify the provided Nuxt 3 app to match [this mock](https://www.figma.com/file/N
 
 ### Links
 
-- Figma Mock: <https://www.figma.com/file/Nqtrx7PvY68U8FeNphzHDM/Untitled?type=design&node-id=0%3A1&mode=design&t=QrPxbJQ6qtH5BfBR-1>
+- Figma Mock: <https://www.figma.com/file/Nqtrx7PvY68U8FeNphzHDM/Gank-Technical-Test>
 
 ### API
 - getUser: https://api.ganknow.com/v1/users/nickname/paddie?timezone=7
@@ -22,7 +22,7 @@ Modify the provided Nuxt 3 app to match [this mock](https://www.figma.com/file/N
 
 ## Functional Requirements
 - [Vue 3](https://vuejs.org/) and TypeScript
-- User should be able to view the name, a brief description, versions available, and other info shown in the mock for services
+- User should be able to view the user profile, feed timeline, and other info shown in the mock for profile page
 - User should be able to click on a feed to view more details
 - User should be able to paginate through feed
 - The button doesn't have to be operable  -- interacting with this elements could do nothing, could be fully implemented (stretch goal), or something in between
@@ -36,8 +36,8 @@ Modify the provided Nuxt 3 app to match [this mock](https://www.figma.com/file/N
 - Routing and views (e.g. navigating to timeline)
 - State management with [Pinia](https://pinia.vuejs.org/)
 - [Component Tests and/or Unit Tests](#run-component-and-unit-tests-with-vitest-and-optionally-vue-test-utils)
-- Use SSR
-- Caching endpoint response
+- Utilize SSR (Server-Side Rendering).
+- Implement caching system
 - Other items covered in your profile page
 
 
@@ -60,3 +60,79 @@ You have up to a week to complete the exercise, but we don't expect you to spend
 When it's ready, please send your recruiter a link to the source code in a GitHub repository (no Pull Requests).
 
 ---
+## Project Setup
+
+### Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+### Clone the repository
+
+```sh
+git clone git@github.com:hatfim/technical-test.git
+```
+
+### pnpm
+
+This repository uses [`pnpm`](https://pnpm.io) rather than `npm` or `yarn`. [See here for instructions on installing pnpm](https://pnpm.io/installation).
+
+### Install dependencies
+
+```sh
+pnpm install
+```
+### Compile and Hot-Reload for Development
+
+Start the the Nuxt app:
+
+```sh
+pnpm dev
+```
+### Linting and fixing the code
+
+#### ESLint
+
+```sh
+# Run the linter
+pnpm lint
+
+# Run javascript specific linter
+pnpm lint:js
+
+# Run prettier lint check
+pnpm lint:prettier
+
+# Fix linting errors
+pnpm lintfix
+```
+
+### Run Component and Unit Tests with [Vitest](https://vitest.dev/) and optionally [Vue Test Utils](https://test-utils.vuejs.org/)
+
+Component and unit test files must be located in the `/src/` directory and have a filename format of `*.spec.ts`. In the starter project, see `src/components/ServiceCatalog.spec.ts` for an example.
+
+```sh
+# Run tests
+pnpm test
+
+# or run the tests in the Vitest UI
+pnpm test:open
+```
+### Build and Minify for Production
+
+```sh
+pnpm build
+```
+
+### Preview your built application
+
+First, you'll need to build the app
+
+```sh
+pnpm start
+```
+
+Now run the `preview` command
+
+```sh
+pnpm preview
+```
