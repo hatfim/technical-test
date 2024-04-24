@@ -12,7 +12,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "start": "nuxt start",
-    "test": "cross-env FORCE_COLOR=1 vitest",
+    "test": "vitest",
     "test:open": "vitest --ui"
   },
   "devDependencies": {

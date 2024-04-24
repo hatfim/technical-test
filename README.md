@@ -14,11 +14,14 @@ Modify the provided Nuxt 3 app to match [this mock](https://www.figma.com/file/N
 ### Links
 
 - Figma Mock: <https://www.figma.com/file/Nqtrx7PvY68U8FeNphzHDM/Gank-Technical-Test>
+- Profile page reference <https://ganknow.com/paddie>
+- Profile feed page reference <https://ganknow.com/paddie?tab=feed>
+- Feed details page: <https://ganknow.com/post/9f76c755-3d8b-4899-9350-5b05d911bcc3>
 
 ### API
-- getUser: https://api.ganknow.com/v1/users/nickname/paddie?timezone=7
-- getTimeline: https://api.ganknow.com/v1/posts?author=56e5e423-a0a5-44a9-a665-b73e5b12d7cd&perPage=20&page=1
-- getTotalFollowers: https://api.ganknow.com/v1/users/follow-profile/follower/56e5e423-a0a5-44a9-a665-b73e5b12d7cd?count=true
+- getUser: <https://api.ganknow.com/v1/users/nickname/paddie?timezone=7>
+- getTimeline: <https://api.ganknow.com/v1/posts?author=56e5e423-a0a5-44a9-a665-b73e5b12d7cd&perPage=20&page=1>
+- getTotalFollowers: <https://api.ganknow.com/v1/users/follow-profile/follower/56e5e423-a0a5-44a9-a665-b73e5b12d7cd?count=true>
 
 ## Functional Requirements
 - [Vue 3](https://vuejs.org/) and TypeScript
@@ -108,7 +111,7 @@ pnpm lintfix
 
 ### Run Component and Unit Tests with [Vitest](https://vitest.dev/) and optionally [Vue Test Utils](https://test-utils.vuejs.org/)
 
-Component and unit test files must be located in the `/src/` directory and have a filename format of `*.spec.ts`. In the starter project, see `src/components/ServiceCatalog.spec.ts` for an example.
+Component and unit test files must be located in the `/components` directory and have a filename format of `*.spec.ts`. In the starter project, see `src/components/StarterHeading.spec.ts` for an example.
 
 ```sh
 # Run tests
